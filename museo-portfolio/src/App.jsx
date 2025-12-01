@@ -1,21 +1,10 @@
-import HeroOverlay from "./components/layout/HeroOverlay.jsx";
-import MuseumScene from "./components/museum/MuseumScene.jsx";
-import { texts } from "./texts/es.js";
+// src/App.jsx
+import LoadingScreen from "./components/ui/LoadingScreen.jsx";
 
 function App() {
   return (
     <div className="app-root">
-      {/* Overlay con la presentación breve del usuario */}
-      <HeroOverlay
-        name={texts.hero.name}
-        role={texts.hero.role}
-        tagline={texts.hero.tagline}
-      />
-
-      {/* Contenedor principal del museo 3D */}
-      <main className="museum-wrapper">
-        <MuseumScene />
-      </main>
+      <LoadingScreen text="Museo en construcción..." />
     </div>
   );
 }
